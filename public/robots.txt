@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://redbird221b.github.io/cfo-control/sitemap.xml
+Sitemap: https://redbird221b.github.io/cfocontrolai/sitemap.xml

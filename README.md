@@ -55,10 +55,10 @@ The script writes `dist/cfo-control-deck.pdf`.
 
 This repo is configured for GitHub Pages through `.github/workflows/deploy-pages.yml`.
 
-Expected public URL for repository `redbird221b/cfo-control`:
+Expected public URL for repository `Redbird221b/cfocontrolai`:
 
 ```text
-https://redbird221b.github.io/cfo-control/
+https://redbird221b.github.io/cfocontrolai/
 ```
 
 Push to `main`; the workflow builds `dist`, uploads it to Pages, and adds `404.html` as an SPA fallback so `/deck` and `/privacy` work when opened directly.
