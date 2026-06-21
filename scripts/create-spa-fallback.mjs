@@ -1,3 +1,11 @@
-import { copyFile } from 'node:fs/promises'
+import { copyFile, mkdir } from 'node:fs/promises'
+import { dirname } from 'node:path'
 
-await copyFile('dist/index.html', 'dist/404.html')
+const copies = ['dist/404.html', 'dist/deck/index.html', 'dist/privacy/index.html']
+
+await Promise.all(
+  copies.map(async (target) => {
+    await mkdir(dirname(target), { recursive: true })
+    await copyFile('dist/index.html', target)
+  }),
+)
