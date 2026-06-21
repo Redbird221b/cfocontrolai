@@ -1,0 +1,56 @@
+@page {
+  size: 16in 9in;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body,
+  #root {
+    width: 16in;
+    min-width: 16in;
+    height: auto;
+    margin: 0;
+    background: #071321 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  * {
+    animation: none !important;
+    transition: none !important;
+    box-shadow: none !important;
+  }
+
+  .deck-nav,
+  header,
+  footer {
+    display: none !important;
+  }
+
+  .deck-print {
+    width: 16in;
+    background: #071321 !important;
+  }
+
+  .deck-page,
+  .deck-slide {
+    width: 16in !important;
+    height: 9in !important;
+    min-height: 9in !important;
+    overflow: hidden !important;
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .deck-page:last-child,
+  .deck-page:last-child .deck-slide {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

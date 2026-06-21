@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://redbird221b.github.io/cfo-control/sitemap.xml
